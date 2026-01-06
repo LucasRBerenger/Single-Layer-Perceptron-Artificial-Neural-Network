@@ -14,6 +14,6 @@ Binary pattern recognition system for simplified handwritten digits ('0', '1'), 
 
 ### Technical Specifications
 
-* **Core Logic:** Manual derivation of the **Perceptron Learning Rule (Delta Rule)**: `w_new = w + Δw`(where Δw = learning_rate * error * input).
+* **Core Logic:** Manual derivation of the **Perceptron Learning Rule (Delta Rule)**: `w_new = w + Δw` (where Δw = learning_rate * error * input).
 * **Architecture:** **One-vs-All (OvA)** topology. Deploys independent neuron instances for each class to resolve multiclass problems using binary linear separators.
 * **Optimization (Bipolar Encoding):** Inputs and targets use `[-1, 1]` instead of `[0, 1]`. Unlike standard binary, the value `-1` allows the network to mathematically learn from **feature absence**, preventing weight stagnation (null updates) and accelerating convergence.
